@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mysql-development:
+    image: mysql:8.0.17
+    container_name: db_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: senhaaqui
+      MYSQL_DATABASE: dbapp
+    ports:
+      - "3306:3306"
