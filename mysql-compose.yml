@@ -8,3 +8,6 @@ services:
       MYSQL_DATABASE: dbapp
     ports:
       - "3306:3306"
+    volumes:
+      - ../dkdata/mysql:/home
+
